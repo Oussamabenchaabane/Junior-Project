@@ -1,0 +1,52 @@
+.nav {
+  background-color: #1a1a1a;
+  padding: 1rem;
+  height: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.searchInput {
+  margin-right: 1rem;
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #646cff;
+  color: #f1f1f1;
+  background-color: #1a1a1a;
+}
+
+.nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav a {
+  color: #f1f1f1;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.8rem 1rem;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  color: #646cff;
+  background-color: rgba(100, 108, 255, 0.1);
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #646cff;
+  margin-right: 2rem;
+} 

@@ -1,4 +1,4 @@
-/* Define color variables for easy theme management */
+
 :root {
   --primary-color: #646cff;
   --secondary-color: #61dafb;
@@ -15,7 +15,7 @@
 }
 
 .main-content {
-  margin-left: 250px; /* Match navbar width */
+  margin-left: 250px; 
   padding: 2rem;
   margin-top: 100px;
   min-height: 100vh;
@@ -68,7 +68,7 @@
 
 
 
-/* Media Queries */
+
 @media (prefers-reduced-motion: no-preference) {
   a:nth-of-type(2) .logo {
     animation: logo-spin infinite 20s linear;

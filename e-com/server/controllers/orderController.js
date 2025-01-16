@@ -4,7 +4,7 @@ const orderController = {
   createOrder: async (req, res) => {
     try {
       const { total_amount } = req.body;
-      const user_id = req.user.id; // Assuming you have authentication middleware
+      const user_id = req.user.id; 
 
       const result = await Order.createOrder({
         user_id,
@@ -19,7 +19,7 @@ const orderController = {
 
   getUserOrders: async (req, res) => {
     try {
-      const userId = req.user.id; // Assuming you have authentication middleware
+      const userId = req.user.id; 
       const orders = await Order.getUserOrders(userId);
       res.json(orders);
     } catch (error) {

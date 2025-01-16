@@ -28,17 +28,17 @@ const Product = sequelize.define('Product', {
   timestamps: false,
 });
 
-// Add the getAllProducts method
+
 Product.getAllProducts = async function() {
   return await Product.findAll();
 };
 
-// Add the createProduct method
+
 Product.createProduct = async function(productData) {
   return await Product.create(productData);
 };
 
-// Add the updateProduct method
+
 Product.updateProduct = async function(id, productData) {
   const product = await Product.findByPk(id);
   if (product) {
@@ -47,7 +47,7 @@ Product.updateProduct = async function(id, productData) {
   throw new Error('Product not found');
 };
 
-// Add the deleteProduct method
+
 Product.deleteProduct = async function(id) {
   const product = await Product.findByPk(id);
   if (product) {

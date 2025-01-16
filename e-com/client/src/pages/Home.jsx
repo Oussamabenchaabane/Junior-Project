@@ -12,11 +12,11 @@ function Home({ searchTerm }) {
           setProducts(data);
         } else {
           console.error('Expected an array of products, but got:', data);
-          setProducts([]); // Fallback to an empty array
+          setProducts([]); 
         }
       } catch (error) {
         console.error('Failed to load products:', error);
-        setProducts([]); // Fallback to an empty array in case of error
+        setProducts([]); 
       }
     };
 
